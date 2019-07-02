@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009688"
+        app:title="iBARC"
+        app:titleMargin="10sp"
+        app:titleTextColor="#F8F3F2" />
+
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center_horizontal"
+        android:text="OTP"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:layout_below="@+id/otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/barc_logo" />
+
+
+    <EditText
+        android:id="@+id/otp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="93dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter the OTP"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp_text"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginTop="35sp"
+        android:onClick="submit"
+        android:text="Submit" />
+
+
+
+
+</RelativeLayout>
+
+

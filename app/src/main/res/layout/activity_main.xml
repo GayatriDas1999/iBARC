@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009688"
+        app:title="iBARC"
+        app:titleMargin="10sp"
+        app:titleTextColor="#F8F3F2" />
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="0sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:focusable="true"
+        android:hint="Enter Employee ID"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#ffff25e6" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:focusable="true"
+        android:hint="Enter Email"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#ffff25e6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/barc_logo" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_alignRight="@+id/UserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#ffff299f" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:onClick="login"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_toEndOf="@+id/textview"
+        android:layout_toRightOf="@+id/textview"
+        android:onClick="reset"
+        android:text="Reset" />
+</RelativeLayout>
